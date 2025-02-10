@@ -3,7 +3,7 @@
 
 ## 내가 구현하고자 하는 부분
 - gulp 설치
-- package.json 작업
+- gulpfile 작업
 - 파일구조 만들기
 - gulp 플러그인 설치
 
@@ -37,16 +37,16 @@ gulp.task('default', function() {
 > `dist` 작업한 것을 gulp에 의해 빌드된 곳
 
 ``` bash
-src
-  |- common
-    |- css
-    |- fonts
-    |- js
-  |- pc
-    |- css
-    |- html
-      |- include
-    |- js
+src/
+  |- common/
+    |- css/
+    |- fonts/
+    |- js/
+  |- pc/
+    |- css/
+    |- html/
+      |- include/
+    |- js/
   |- status.html
 dist
 node-modules
@@ -113,6 +113,7 @@ package-lock.json
 ---
 
 ### Reference
+[프로젝트 빌드 자동화 도구 gulp.js 시작하기](https://minzcode.tistory.com/entry/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%B9%8C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94-%EB%8F%84%EA%B5%AC-gulpjs-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0)
 https://github.com/eu81273/gulp-step-by-step/tree/master/step01_hello_world<br/>
 [Gulp.js](https://webclub.tistory.com/467)<br/>
 [Gulp - 플러그인 설치 및 사용하기](https://lab.naminsik.com/3440)<br/>
