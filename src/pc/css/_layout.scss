@@ -10,3 +10,13 @@ span {
   font-weight: 600;
   background: pink;
 }
+.swiper {
+  overflow: hidden;
+  .swiper-slide {
+    padding: 20px 0;
+    background: #eee;
+    &:nth-child(odd) {
+      background: yellowgreen;
+    }
+  }
+}

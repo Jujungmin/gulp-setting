@@ -55,7 +55,8 @@ function commonJs() {
 function buildStyle() {
   return src([
     pathPc.scss,
-    // 'src/pc/css/**/*.css'
+    // 'src/pc/css/**/*.css',
+    // 'src/common/css/lib/*.css',
   ])
   .pipe(soruceMaps.init())
   .pipe(sass().on('error', sass.logError))
@@ -78,7 +79,7 @@ function buildHtml() {
 }
 
 function buildScript() {
-  return src(pathPc.js)
+  return src([pathPc.js])
   .pipe(uglify({
     mangle: false,
     compress: { drop_console: false },
